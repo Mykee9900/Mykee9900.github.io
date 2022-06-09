@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mykee Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./resources/photos/Logo1.png">
+    <script src="https://kit.fontawesome.com/869d23ac57.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+        <h4 class="name">Mykee Flores</h4>
+        <label for="color">Change background color</label>
+        <select name="color" onchange="colorChange(this)">
+            <option id="black">Black</option>
+            <option id="white">White</option>
+        </select>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="https://github.com/Mykee9900/Projects" target="_blank">My Projects</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="aboutContent">
+                <div class="aboutText">
+                    <h4 class="intro">Hello, My name is Mykee</h4>
+                    <p>I love coding, and I have been doing it for awhile. I have always been an computer enthusiast since I was in elementary school, so I chosen my passion into a career. I am always looking for opportunities to improve my skills as there is always room for improvement and looking forward to become a software engineer some day.</p>
+                </div>
+                <img src="./resources/photos/coding.webp" alt="coding picture">
+            </div>
+        </section>
+        <section id="skills">
+            <h1>My Skills</h1>
+            <div class="skillContainer">
+                <div class="aboutText">
+                    <h4 class="intro">My current coding languages</h4>
+                    <ul>
+                        <li>HTML <i class="fa-brands fa-html5"></i></li>
+                        <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
+                        <li>JavaScript <i class="fa-brands fa-js"></i></li>
+                        <li>MYSQL <i class="fa-solid fa-database"></i></li>
+                        <li>Python <i class="fa-brands fa-python"></i></li>
+                        <li>GIT <i class="fa-brands fa-git"></i></li>
+                        <li>NODE <i class="fa-brands fa-node"></i></li>
+                    </ul>
+                </div>
+                <div class="projects">
+                    <h4 class="intro">Current Projects</h4>
+                    <div class="projectImages">
+                        <figure>
+                            <a href="./resources/templates/affirm.html" target="_blank"><img src="./resources/photos/affirmGen.jpg" alt="Box figure with a button to generate a affirmation."></a>
+                            <figcaption>I created this project that has a button to click that will randomly select an affirmation. This project is created with JavaScript, HTML, and CSS. Click picture to see project in action.</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="./resources/templates/calculator.html" target="_blank"><img src="./resources/photos/calculator.jpg" alt="Calculator Photo"></a>
+                            <figcaption>I created a calculator project with basic functionality. This project uses JavaScript, HTML and CSS.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <h1>Contact Me</h1>
+        <ul class="contactList">
+            <li><a href="https://www.linkedin.com/in/elias-flores-629113217/" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/Mykee9900" target="_blank">Github</a></li>
+            <li>Email: Mykee5511@gmail.com</li>
+        </ul>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

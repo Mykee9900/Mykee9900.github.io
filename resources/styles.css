@@ -1,0 +1,132 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: black;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.name, label {
+    font-family: 'Dancing Script', cursive;
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+.intro {
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+li {
+    display: inline;
+    padding-right: 25px;
+    list-style-type: disc;
+    color: cornflowerblue;
+}
+a {
+    color: cornflowerblue;
+}
+a:hover {
+    text-decoration: wavy;
+    color: red;
+}
+#about, #contact {
+    text-align: center;
+    margin-top: 50px;
+}
+#about h1, #skills h1 {
+    font-size: 2rem;
+}
+.aboutContent {
+    display: flex;
+}
+.aboutText {
+    text-align: left;
+    margin: 15px 30px;
+}
+.aboutContent img {
+    height: 20rem;
+    border-radius: 15px;
+    border: solid 2px white;
+    margin-right: 20px;
+}
+#skills {
+    text-align: center;
+    margin-top: 60px;
+}
+.skillsContainer {
+    display: flex;
+}
+.projects {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.projectImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figure {
+    width: 350px;
+}
+figure img {
+    height: 12rem;
+    width: 20rem;
+    border-radius: 15px;
+    border: solid 2px white;
+}
+figcaption {
+    padding: 15px;
+}
+.contactList {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+@media only screen and (max-width: 990px) and (min-width: 659px){
+    .aboutContent {
+        display: flex;
+        align-items: center;
+    }
+    .aboutContent img {
+        height: 10rem;
+    }
+    .aboutText ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 658px){
+    nav ol {
+        display: none;
+    }
+    header div {
+        display: flex;
+        align-items: center;
+    }
+    #about h1, #skills h1 {
+        font-size: 1.7rem;
+    }
+    .aboutContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutText ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .aboutContent img {
+        height: 10rem;
+    }
+    .projectImages {
+        display: flex;
+        flex-direction: column;
+    }
+}
